@@ -1,0 +1,74 @@
+{
+  "name": "media-download-manager",
+  "version": "1.0.0",
+  "description": "Aurora Glass Media Download Manager - A world-class download manager with unique UI/UX",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint . --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "~50.0.6",
+    "expo-av": "~13.10.4",
+    "expo-blur": "~12.9.2",
+    "expo-clipboard": "~5.0.1",
+    "expo-constants": "~15.4.5",
+    "expo-file-system": "~16.0.6",
+    "expo-haptics": "~12.8.1",
+    "expo-linear-gradient": "~12.7.2",
+    "expo-notifications": "~0.27.6",
+    "expo-router": "~3.4.7",
+    "expo-splash-screen": "~0.26.4",
+    "expo-sqlite": "~13.0.3",
+    "expo-status-bar": "~1.11.1",
+    "react": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-gesture-handler": "~2.14.0",
+    "react-native-reanimated": "~3.6.2",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0",
+    "react-native-svg": "14.1.0",
+    "zustand": "^4.5.0",
+    "@expo/vector-icons": "^14.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@testing-library/react-native": "^12.4.3",
+    "@types/jest": "^29.5.12",
+    "@types/react": "~18.2.55",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "jest": "^29.7.0",
+    "jest-expo": "~50.0.1",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/**/*.test.{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  },
+  "private": true
+}
